@@ -1,0 +1,33 @@
+{
+  "name": "coa-ali-ots",
+  "version": "0.0.0",
+  "description": "轻量的阿里云日志服务SDK for Node.js",
+  "keywords": [
+    "coajs",
+    "coa",
+    "coa-ali-ots",
+    "ali-sls",
+    "ali",
+    "sls"
+  ],
+  "license": "MIT",
+  "author": "Aex",
+  "homepage": "https://github.com/coajs",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/coajs/coa-ali-ots.git"
+  },
+  "scripts": {
+    "dev": "tsc -w",
+    "build": "rm -rf dist && tsc && cp package.json *.md dist && rm -rf dist/test",
+    "sync": "curl -X PUT 'https://npm.taobao.org/sync/coa-ali-ots?sync_upstream=true'",
+    "publish-prerelease": "yarn build && yarn version --prerelease && cp package.json *.md dist && cd dist && rm -rf dist && npm publish"
+  },
+  "dependencies": {
+    "tablestore": "^5.0.7"
+  },
+  "devDependencies": {
+    "@types/node": "^14.14.41",
+    "typescript": "^4.2.4"
+  }
+}
