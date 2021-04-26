@@ -1,13 +1,12 @@
 import { AliOtsBin, TableStore } from '../lib/AliOtsBin'
-import { AliOts } from '../typings'
 
 export class AliOtsStorage {
 
   private readonly bin: AliOtsBin
 
   // 文档参考 https://help.aliyun.com/document_detail/56354.html
-  constructor (config: AliOts.Config) {
-    this.bin = new AliOtsBin(config)
+  constructor (bin: AliOtsBin) {
+    this.bin = bin
   }
 
   async set<T> (key: string, value: T, ms = 1000 * 365 * 24 * 3600 * 1000) {

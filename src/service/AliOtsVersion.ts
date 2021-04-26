@@ -1,12 +1,11 @@
 import { AliOtsBin, TableStore } from '../lib/AliOtsBin'
-import { AliOts } from '../typings'
 
 export class AliOtsVersion {
 
   private readonly bin: AliOtsBin
 
-  constructor (config: AliOts.Config) {
-    this.bin = new AliOtsBin(config)
+  constructor (bin: AliOtsBin) {
+    this.bin = bin
   }
 
   // 文档详见 https://help.aliyun.com/document_detail/147223.html
