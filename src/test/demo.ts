@@ -6,7 +6,7 @@ const config = {
   accessKeyId: 'LTAI4XXXXXXXXX1DNpZDk',
   accessKeySecret: 'TxqDw89E3wXXXXXXXXXXXXoWZy2hXvZ',
   instance: 'instance-name',
-  endpoint: 'https://instance-name.cn-shanghai.ots.aliyuncs.com'
+  endpoint: 'https://instance-name.cn-shanghai.ots.aliyuncs.com',
 }
 
 // 初始化bin实例

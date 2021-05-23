@@ -5,10 +5,9 @@
 [![npm downloads](https://img.shields.io/npm/dm/coa-ali-ots.svg?style=flat-square)](http://npm-stat.com/charts.html?package=coa-ali-ots)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](https://github.com/coajs/coa-ali-ots/pulls)
 
-轻量的阿里云TableStore封装 for Node.js。基于 [tablestore](https://www.npmjs.com/package/tablestore) 做简单处理。
+轻量的阿里云 TableStore 封装 for Node.js。基于 [tablestore](https://www.npmjs.com/package/tablestore) 做简单处理。
 
 根据日常实际项目使用情况，封装了一些个人常用的的方法。此方法在特殊场景下使用，不具有普遍性。
-
 
 ## 快速开始
 
@@ -19,6 +18,7 @@ yarn add coa-ali-ots
 ```
 
 ### 使用
+
 ```typescript
 import { AliOtsBin, AliOtsStorage, AliOtsVersion } from 'coa-ali-ots'
 
@@ -27,7 +27,7 @@ const config = {
   accessKeyId: 'LTAI4XXXXXXXXX1DNpZDk',
   accessKeySecret: 'TxqDw89E3wXXXXXXXXXXXXoWZy2hXvZ',
   instance: 'instance-name',
-  endpoint: 'https://instance-name.cn-shanghai.ots.aliyuncs.com'
+  endpoint: 'https://instance-name.cn-shanghai.ots.aliyuncs.com',
 }
 
 // 初始化bin实例
@@ -48,4 +48,4 @@ await otsStorage.set('key1', 'data1')
 await otsStorage.get('key1') // "data1"
 ```
 
-更多的使用可以参考阿里云表格储存Tablestore [官方文档](https://help.aliyun.com/document_detail/56350.html) 原文。
+更多的使用可以参考阿里云表格储存 Tablestore [官方文档](https://help.aliyun.com/document_detail/56350.html) 原文。
